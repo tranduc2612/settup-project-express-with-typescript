@@ -1,0 +1,6 @@
+npm run beautify (thằng này làm đẹp code hơn tương tự như thằng beautiful nma không cần phải commit)
+
+git add .
+git commit -m "message" 
+npm run beautiful // cái này để nó kiếm tra code có clear với convention ko (phải commit thì mới chạy được lệnh này)
+git push origin main

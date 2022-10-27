@@ -1,9 +1,9 @@
-import {Request, Response } from 'express';
+import { Request, Response } from 'express';
 
-class HomeController{
-    index(req:Request, res:Response): void{
-        console.log("This is home page");
-        res.render("index");
+class HomeController {
+    index(req: Request, res: Response): void {
+        console.log('This is home page');
+        res.render('index');
     }
 }
 

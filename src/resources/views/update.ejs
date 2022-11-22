@@ -8,23 +8,23 @@
     <title>Create</title>
 </head>
 <body>
-    <form action="/create/store" method="post" class="container mt-3">
+    <form action="/create/update/<%=course._id%>?_method=PUT" method="post" class="container mt-3">
         <div class="mb-3">
             <label for="name" class="form-label">Name</label>
-            <input type="input" class="form-control" id="name" placeholder="Nhập tên" name="name">
+            <input type="input" class="form-control" id="name" placeholder="Nhập tên" name="name" value="<%=course.name%>">
           </div>
           
           <div class="mb-3">
             <label for="img" class="form-label">img</label>
-            <input type="input" class="form-control" id="img" placeholder="Nhập ảnh" name="img">
+            <input type="input" class="form-control" id="img" placeholder="Nhập ảnh" name="img" value="<%=course.img%>">
           </div>
 
           <div class="mb-3">
             <label for="" class="form-label">Miêu tả</label>
-            <input type="input" class="form-control" id="" placeholder="Nhập miêu tả" name="des">
+            <input type="input" class="form-control" id="miêu tả" placeholder="Nhập miêu tả" name="des" value="<%=course.des%>">
           </div>
 
-          <button type="submit" class="btn btn-primary">Thêm</button>
+          <button type="submit" class="btn btn-primary">Sửa</button>
     </form>
     
 
